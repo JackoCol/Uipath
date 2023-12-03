@@ -1,0 +1,541 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1858,4611" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="908,4546" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:Int32" Name="Contador">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard DisplayName="Use Browser Chrome: Colecciones – Fidalga" sap:VirtualizedContainerService.HintSize="866,4458" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="205921d2-3ec1-45fc-a177-afe531c6971e">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="832,4240" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="790,4150" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="[string.Format(&quot;{0}\AnthonyMagdaFidalga\Base a consultar\Productos Cotizacon.xlsx&quot;, Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory))]">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="756,3877" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="714,3785" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Excel.Sheet(&quot;Consulta&quot;)]" SaveAfterEachRow="False">
+                      <ueab:ExcelForEachRowX.Body>
+                        <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="680,3592" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="638,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Text="[CurrentRow.ByField(&quot;Producto&quot;)]" Version="V3">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/" CvElementArea="789, 190, 782, 65" CvType="InputBox" DesignTimeRectangle="796, 192, 697, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;input' tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-group-field header-search__input' tag='INPUT' type='search' aaname='' /&gt;" Guid="184e06bb-a838-4188-8c2d-ba258bf9e710" InformativeScreenshot="8e6683f2b33efd2b2f109f9d73c42183.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fidalga' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="1512, 207, 35, 33" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;     &amp;#x9;' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;     &amp;#x9;' type='' tag='svg' class='' /&gt;" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SVG'" sap:VirtualizedContainerService.HintSize="638,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/" DesignTimeRectangle="1512, 207, 35, 33" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;     &amp;#x9;' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;button&amp;gt;svg' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;     &amp;#x9;' type='' tag='svg' class='' /&gt;" Guid="aa23ada1-dd55-400b-9c2d-b29841dcdf54" InformativeScreenshot="864a3521273d26b6b73ba8aaa97ea794.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fidalga' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CvElementArea="789, 190, 782, 65" CvType="InputBox" DesignTimeRectangle="796, 192, 697, 60" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;input' tag='INPUT' type='search' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-group-field header-search__input' tag='INPUT' type='search' aaname='' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="638,91" sap2010:WorkflowViewState.IdRef="Delay_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Delay>
+                            <If Condition="[CurrentRow.ByField(&quot;Producto&quot;) = string.Format(&quot;Arroz&quot;)]" sap:VirtualizedContainerService.HintSize="638,2912" sap2010:WorkflowViewState.IdRef="If_1">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="604,2357" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign DisplayName="Set Variable Value" sap:VirtualizedContainerService.HintSize="562,83" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[Contador]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[Contador +1]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                  <If Condition="[Contador = 1]" sap:VirtualizedContainerService.HintSize="562,2146" sap2010:WorkflowViewState.IdRef="If_2">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,1624" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/search?options%5Bprefix%5D=last&amp;q=arr" DesignTimeRectangle="737, 493, 419, 419" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='main-collection-product-grid' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main-collection-product-grid' tag='IMG' type='' class='images-one lazyautosizes lazyloaded' aaname='arroz-dolly-diamante-1kg' /&gt;" Guid="ebf0ea5d-e1f2-42ea-80fd-9811d9b144fe" InformativeScreenshot="b8ec2036267704c8decd323d35a65dbf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buscar: 34 Resultados encontrados para &amp;quot;arr&amp;quot; – Fidalga' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvElementArea="719, 1076, 362, 54" CvTextArea="825, 1095, 150, 20" CvTextArgument="Agregar Al Carrito" CvType="Button" DesignTimeRectangle="723, 1079, 355, 50" ElementType="Button" FriendlyName="'Agregar al Carrito'" FullSelectorArgument="&lt;webctrl aaname='           Agregar al Carrito          ' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Agregar al Carrito          ' type='submit' tag='BUTTON' class='btn add-to-cart-btn' check:innerText='Agregar Al Carrito' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Arroz Dolly Diamante 1kg'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/search?options%5Bprefix%5D=last&amp;q=arr" CvTextArea="1242, 470, 374, 31" CvTextArgument="Arroz Dolly Diamante 1kg" CvType="Text" DesignTimeRectangle="1244, 463, 588, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Arroz Dolly Diamante 1kg'" FullSelectorArgument="&lt;webctrl class='product-title' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='product-title' tag='H2' type='' aaname='                           ' check:innerText='Arroz Dolly Diamante 1kg' /&gt;" Guid="0cd01ef4-aa33-4ff6-a700-3c45f8b8e1ac" InformativeScreenshot="061e791d4b967f022b201ee50d375460.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buscar: 34 Resultados encontrados para &amp;quot;arr&amp;quot; – Fidalga' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvTextArea="1243, 743, 93, 17" CvTextArgument="Cantidad:" CvType="Text" DesignTimeRectangle="1244, 739, 91, 28" ElementType="Text" FriendlyName="'Cantidad'" FullSelectorArgument="&lt;webctrl parentid='add-to-cart-quickview-form' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='add-to-cart-quickview-form' tag='LABEL' type='' class='' aaname='                     Cantidad:                  ' check:innerText='Cantidad:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                                        <uix:NGetText DisplayName="Get Text 'Arroz Dolly Diamante 1kg'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Nombre_Producto&quot;).StringValue]" Version="V3">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg" CvTextArea="1283, 449, 374, 31" CvType="AnyWordGroup" DesignTimeRectangle="1286, 443, 850, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Arroz Dolly Diamante 1kg'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='product-title' aaname='                                                ' /&gt;" Guid="71aaddd8-f8ee-469e-89c9-acdfebb168d3" InformativeScreenshot="9bdd1271530421019dc8a240f7b0e941.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvElementArea="1284, 509, 24, 25" CvType="Icon" DesignTimeRectangle="1286, 511, 20, 20" ElementType="Icon" FriendlyName="'SVG icon-fire'" FullSelectorArgument="&lt;webctrl id='icon-fire' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl id='icon-fire' tag='svg' type='' class='icon icon-fire' aaname='                                                          ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIISURBVEhL5VVZSgNBEDWgHke/XO4g5svlDC4/xjOICppD6I9ewi3ewpio6IgkoMEIZrayXs9kpqqnMwrilw8Kku6qetWvunrG6I/xHwjCgN621shvnFEcReniz1FKECN5bYPuJ8bIm58i/+qcF+N0N9mnb0hHEsRhSL3tDWpPVgwB7JlJwlYzcQh8eq2tUb++W0riJuAqIcl9JUkszZubpqh1YxKDHCcLGhcckp9MwkkQDwaFxNK8uSlF7s0z6V0rjdYoEEDXzsqiSvgT63GvKArTLDkKBDiuLc3L8gI9znLVYq1gHONzrA1FgOq7K1UV+MRyYD1q36p1l+Hk5mYJKAJUYFcfXF8mm9zEz9NjtefNTGt//h00Uv8UOQESnBypBG+19XQzQez71D/czfaR7P1gR8WYaytuVE7Ad3k4VEPLqhcI203qLC2YXiFRaEmXyJQ3WxHYt4cCrWcG1jl7NthHxqBIOXhKon59L3N8GC/q6QLuvyT4PDkeIREjwPQKZ9MD4ewCGi+fkwH/l1AEdjWY0LJTQH+ZHGZPtCKAdnZFeHsgHbRG80wD+aH7qO+rxIhBrP3waQKAE3WsYRsa3qBsEK15QYzrUhQJGDg6KpcJygy+iHHBSQBAyz5ksCpVxnvwIR7AURhJYMCvIz4wuHq97U3TdFh3tWr6Yj4+jhdUopzg1yD6AonVfzVDjd+jAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                        <uix:NGetText DisplayName="Get Text 'Disponibilidad'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Disponible&quot;).StringValue]" Version="V3">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg" CvTextArea="1412, 592, 90, 20" CvType="AnyWordGroup" DesignTimeRectangle="1413, 590, 88, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Disponible'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='5' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' isleaf='1' tag='SPAN' /&gt;" Guid="0a673bb1-d928-4e08-b471-14e6dc6980fc" InformativeScreenshot="106d1111877a141b14974aa4240372ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvTextArea="1285, 592, 124, 20" CvTextArgument="Disponibilidad:" CvType="Text" DesignTimeRectangle="1286, 586, 123, 30" ElementType="Text" FriendlyName="'Disponibilidad'" FullSelectorArgument="&lt;webctrl aaname='                               Disponibilidad:                  *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               Disponibilidad:                  *' tag='LABEL' type='' class='' check:innerText='Disponibilidad:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                        <uix:NGetText DisplayName="Get Text 'Tipo de Producto'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Precio_Producto&quot;).StringValue]" Version="V3">
+                                          <uix:NGetText.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg" CvTextArea="1286, 676, 105, 27" CvType="AnyWordGroup" DesignTimeRectangle="1286, 677, 850, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Bs8,50'" FullSelectorArgument="&lt;webctrl class='prices' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prices' tag='DIV' type='' aaname='                                                                                                               ' /&gt;" Guid="36897c57-ca79-4e5a-9d6a-68117727de81" InformativeScreenshot="68cc201236733d6b3cddbb416f95ac4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvTextArea="1284, 622, 150, 20" CvTextArgument="Tipo de Producto:" CvType="Text" DesignTimeRectangle="1286, 616, 148, 30" ElementType="Text" FriendlyName="'Tipo de Producto'" FullSelectorArgument="&lt;webctrl aaname='                               Tipo de Producto:                *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               Tipo de Producto:                *' tag='LABEL' type='' class='' check:innerText='Tipo de Producto:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NGetText.Target>
+                                        </uix:NGetText>
+                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[string.Format(&quot;Copiado exito&quot;)]" />
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inicio'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg?_pos=1&amp;_sid=7f18e7550&amp;_ss=r" CvTextArea="467, 205, 196, 34" CvTextArgument="FIDALGA" CvType="Text" DesignTimeRectangle="423, 203, 238, 38" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='Fidalga' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;img' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Fidalga' type='' tag='IMG' class='lazyautosizes lazyloaded' /&gt;" Guid="7fb91a91-21d8-4651-be40-7d10175d62eb" InformativeScreenshot="ce52f6ef94d447caf02a4f1d5a3eb031.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <uix:Target CvTextArea="422, 302, 53, 19" CvTextArgument="Inicio" CvType="Text" DesignTimeRectangle="423, 299, 50, 26" ElementType="Text" FriendlyName="'Inicio'" FullSelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' type='' class='' aaname='Inicio' check:innerText='Inicio' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_17" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="528,1963" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If Condition="[Contador = 2]" sap:VirtualizedContainerService.HintSize="486,1875" sap2010:WorkflowViewState.IdRef="If_3">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <If.Then>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="376,1750" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_13" Text="[string.Format(&quot;entrando fila dos arroz&quot;)]" />
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'IMG'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/search?options%5Bprefix%5D=last&amp;q=arr" DesignTimeRectangle="1220, 493, 419, 419" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='arroz-especial-caisy-1-kg' parentid='main-collection-product-grid' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='arroz-especial-caisy-1-kg' parentid='main-collection-product-grid' tag='IMG' type='' class='images-one lazyautosizes lazyloaded' /&gt;" Guid="0e357ec4-9b42-47b0-ba58-37c67c4ecda5" InformativeScreenshot="a1fe0829d76d86a15de6c08acb9c029d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buscar: 34 Resultados encontrados para &amp;quot;arr&amp;quot; – Fidalga' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CvElementArea="1204, 1076, 362, 55" CvTextArea="1308, 1095, 150, 20" CvTextArgument="Agregar Al Carrito" CvType="Button" DesignTimeRectangle="1207, 1079, 355, 50" ElementType="Button" FriendlyName="'Agregar al Carrito'" FullSelectorArgument="&lt;webctrl aaname='           Agregar al Carrito          ' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;button' idx='2' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Agregar al Carrito          ' type='submit' class='btn add-to-cart-btn' tag='BUTTON' check:innerText='Agregar Al Carrito' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Arroz Especial'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/search?options%5Bprefix%5D=last&amp;q=arr" CvTextArea="1242, 470, 370, 31" CvTextArgument="Arroz Especial Caisy 1 Kg" CvType="Text" DesignTimeRectangle="1244, 463, 588, 41" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Arroz Especial'" FullSelectorArgument="&lt;webctrl class='product-title' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='product-title' tag='H2' type='' aaname='                           ' check:innerText='Arroz Especial Caisy 1 Kg' /&gt;" Guid="d5ebadb5-ba5e-40bc-b578-4f984bc60074" InformativeScreenshot="160ff28b51d46704a76f48c9c18c95c4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buscar: 34 Resultados encontrados para &amp;quot;arr&amp;quot; – Fidalga' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CvElementArea="1241, 857, 443, 81" CvTextArea="1387, 889, 151, 20" CvTextArgument="Agregar Al Carrito" CvType="Button" DesignTimeRectangle="1244, 859, 437, 75" ElementType="Button" FriendlyName="'Agregar al Carrito'" FullSelectorArgument="&lt;webctrl name='add' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl name='add' tag='INPUT' type='submit' class='btn product-add-to-cart' aaname='Agregar al Carrito' check:text='Agregar al Carrito' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_14" />
+                                              <uix:NGetText DisplayName="Get Text 'Arroz Especial'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Nombre_Producto&quot;).StringValue]" Version="V3">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-especial-caisy-1-kg?_pos=2&amp;_sid=753be7e60&amp;_ss=r" CvTextArea="1285, 449, 366, 32" CvType="AnyWordGroup" DesignTimeRectangle="1286, 443, 850, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Arroz Especial'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='product-title' aaname='                                                ' /&gt;" Guid="26b35ba4-7901-46f1-b207-29bcfe0ecd1f" InformativeScreenshot="432193f118495e5e80cf60f02e2e919d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Especial Caisy 1 kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CvElementArea="1284, 509, 24, 25" CvType="Icon" DesignTimeRectangle="1287, 511, 18, 20" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl parentid='icon-fire' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='icon-fire' tag='path' type='' class='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAYAAAD+vg1LAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVEhL3ZRdTgIxEMchUY8DTyp3IPKkeAbUF+EMBk2UQ8gLXsIvvIUKYnSNgUSImMB+jfNvd7ttlyUmxhf/ySSwnfl1OtNpjv5I/w3sezQ+rJHbvaQwCKKPP1MmOAS0vk+D1Rw5pQK5t1f8MYxW5Tot2WwhOPR9mjT2qb+WF2DYG8P93oN08Fz6qNdo2mpmwtNgzgpHH+QlUDdns0hB714AsSlO4nWvOSQ5SawUOJzPU0DdnM2CsalT4s2eelF0IgOMug2rWwboJzbhXlDgRxQpA4xj2SV43ynTywZnqX1LGce4HKtLgZHtqFoxAl752Pge9B+N74sMJxU3JZICY0c7W+/uRi5yc2YXbWPNWS+a/vzb60b+LAlGYOfcCBzX98RSrNB1aXrWVOuAfJ4eGTHi+kU3RIL5LsbDEJvKVpPff6Dhdln0AgDfKpEsh2yiAtu3gbykXoa4jmq82UePQXLxwKhSTFvHyuF5xaxXlnB/dfCs07ZKwfIwbZqTqHHklCU0VB/7Of+PpcD27pioZVmjvjoUpk+gAqM2dgZ4G1Ai1BJNEY3hB+irdWIAEYNY/UFKwBADhtaQxIY3Qg2Qdd8RYzfbBLNwRGSqBy4z+CLGVgoMoVZTHNfKzDBegw/x4CzSQrAQv1Z42HGFJo0D0UzYaLci6i4efetF05UN/pWIvgEEF7/mpkwHbgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Tipo de Producto'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Precio_Producto&quot;).StringValue]" Version="V3">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-especial-caisy-1-kg?_pos=2&amp;_sid=753be7e60&amp;_ss=r" CvTextArea="1286, 677, 100, 26" CvType="AnyWordGroup" DesignTimeRectangle="1286, 672, 101, 36" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Bs7,50'" FullSelectorArgument="&lt;webctrl class='price' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='price' tag='SPAN' type='' /&gt;" Guid="cc7d2f51-101e-443e-9fc8-da4af4525723" InformativeScreenshot="dac8a8a3b1892c6073fc56ed2bda711a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Especial Caisy 1 kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CvTextArea="1284, 622, 150, 20" CvTextArgument="Tipo de Producto:" CvType="Text" DesignTimeRectangle="1286, 616, 148, 30" ElementType="Text" FriendlyName="'Tipo de Producto'" FullSelectorArgument="&lt;webctrl aaname='                               Tipo de Producto:                *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               Tipo de Producto:                *' tag='LABEL' type='' class='' check:innerText='Tipo de Producto:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Disponibilidad'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_13" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Disponible&quot;).StringValue]" Version="V3">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-especial-caisy-1-kg?_pos=2&amp;_sid=753be7e60&amp;_ss=r" CvTextArea="1412, 592, 90, 20" CvType="AnyWordGroup" DesignTimeRectangle="1413, 590, 88, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Disponible'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='5' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' isleaf='1' tag='SPAN' /&gt;" Guid="3f1db3ca-7848-498b-bd95-ec045db8e560" InformativeScreenshot="9ce68cff5deb27c8a08ad1a7b6fb0db7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Especial Caisy 1 kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                        <uix:Target CvTextArea="1285, 592, 124, 20" CvTextArgument="Disponibilidad:" CvType="Text" DesignTimeRectangle="1286, 586, 123, 30" ElementType="Text" FriendlyName="'Disponibilidad'" FullSelectorArgument="&lt;webctrl aaname='                               Disponibilidad:                  *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               Disponibilidad:                  *' tag='LABEL' type='' class='' check:innerText='Disponibilidad:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                              </uix:NGetText>
+                                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_11" Text="[string.Format(&quot;Gardado con exito&quot;)]" />
+                                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inicio'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Version="V3">
+                                                <uix:NClick.Target>
+                                                  <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg?_pos=1&amp;_sid=7f18e7550&amp;_ss=r" CvTextArea="467, 205, 196, 34" CvTextArgument="FIDALGA" CvType="Text" DesignTimeRectangle="423, 203, 238, 38" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='Fidalga' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;img' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Fidalga' type='' tag='IMG' class='lazyautosizes lazyloaded' /&gt;" Guid="7fb91a91-21d8-4651-be40-7d10175d62eb" InformativeScreenshot="ce52f6ef94d447caf02a4f1d5a3eb031.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target CvTextArea="422, 302, 53, 19" CvTextArgument="Inicio" CvType="Text" DesignTimeRectangle="423, 299, 50, 26" ElementType="Text" FriendlyName="'Inicio'" FullSelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' type='' class='' aaname='Inicio' check:innerText='Inicio' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NClick.Target>
+                                              </uix:NClick>
+                                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_18" />
+                                            </Sequence>
+                                          </If.Then>
+                                          <If.Else>
+                                            <Sequence sap:VirtualizedContainerService.HintSize="452,1692" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <If Condition="[Contador = 3]" sap:VirtualizedContainerService.HintSize="410,1604" sap2010:WorkflowViewState.IdRef="If_4">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <If.Then>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,1421" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[string.Format(&quot;Ingresando fila 3 Arroz&quot;)]" />
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SUELTO'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/search?options%5Bprefix%5D=last&amp;q=arroz" CvTextArea="1838, 825, 40, 20" CvTextArgument="SUELTO" CvType="Text" DesignTimeRectangle="1838, 825, 40, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'SUELTO'" Guid="07302689-fbd4-479e-a384-55ff19e640c4" InformativeScreenshot="25e45ef8861b9217f7832009737aa85a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Buscar: 26 Resultados encontrados para &amp;quot;arroz&amp;quot; – Fidalga' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                              <uix:Target CvElementArea="1686, 1076, 361, 54" CvTextArea="1791, 1095, 151, 20" CvTextArgument="Agregar Al Carrito" CvType="Button" DesignTimeRectangle="1690, 1079, 355, 50" ElementType="Button" FriendlyName="'Agregar al Carrito'" FullSelectorArgument="&lt;webctrl aaname='           Agregar al Carrito          ' css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;button' idx='3' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='           Agregar al Carrito          ' type='submit' class='btn add-to-cart-btn' tag='BUTTON' check:innerText='Agregar Al Carrito' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                    </uix:NClick>
+                                                    <uix:NGetText DisplayName="Get Text 'Arroz Dolly Diamante 1kg'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_14" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Nombre_Producto&quot;).StringValue]" Version="V3">
+                                                      <uix:NGetText.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg" CvTextArea="1283, 449, 374, 31" CvType="AnyWordGroup" DesignTimeRectangle="1286, 443, 850, 40" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Arroz Dolly Diamante 1kg'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='product-title' aaname='                                                ' /&gt;" Guid="71aaddd8-f8ee-469e-89c9-acdfebb168d3" InformativeScreenshot="9bdd1271530421019dc8a240f7b0e941.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CvElementArea="1284, 509, 24, 25" CvType="Icon" DesignTimeRectangle="1286, 511, 20, 20" ElementType="Icon" FriendlyName="'SVG icon-fire'" FullSelectorArgument="&lt;webctrl id='icon-fire' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl id='icon-fire' tag='svg' type='' class='icon icon-fire' aaname='                                                          ' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIISURBVEhL5VVZSgNBEDWgHke/XO4g5svlDC4/xjOICppD6I9ewi3ewpio6IgkoMEIZrayXs9kpqqnMwrilw8Kku6qetWvunrG6I/xHwjCgN621shvnFEcReniz1FKECN5bYPuJ8bIm58i/+qcF+N0N9mnb0hHEsRhSL3tDWpPVgwB7JlJwlYzcQh8eq2tUb++W0riJuAqIcl9JUkszZubpqh1YxKDHCcLGhcckp9MwkkQDwaFxNK8uSlF7s0z6V0rjdYoEEDXzsqiSvgT63GvKArTLDkKBDiuLc3L8gI9znLVYq1gHONzrA1FgOq7K1UV+MRyYD1q36p1l+Hk5mYJKAJUYFcfXF8mm9zEz9NjtefNTGt//h00Uv8UOQESnBypBG+19XQzQez71D/czfaR7P1gR8WYaytuVE7Ad3k4VEPLqhcI203qLC2YXiFRaEmXyJQ3WxHYt4cCrWcG1jl7NthHxqBIOXhKon59L3N8GC/q6QLuvyT4PDkeIREjwPQKZ9MD4ewCGi+fkwH/l1AEdjWY0LJTQH+ZHGZPtCKAdnZFeHsgHbRG80wD+aH7qO+rxIhBrP3waQKAE3WsYRsa3qBsEK15QYzrUhQJGDg6KpcJygy+iHHBSQBAyz5ksCpVxnvwIR7AURhJYMCvIz4wuHq97U3TdFh3tWr6Yj4+jhdUopzg1yD6AonVfzVDjd+jAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NGetText.Target>
+                                                    </uix:NGetText>
+                                                    <uix:NGetText DisplayName="Get Text 'Disponibilidad'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_15" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Disponible&quot;).StringValue]" Version="V3">
+                                                      <uix:NGetText.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg" CvTextArea="1412, 592, 90, 20" CvType="AnyWordGroup" DesignTimeRectangle="1413, 590, 88, 22" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Disponible'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' idx='5' isleaf='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' isleaf='1' tag='SPAN' /&gt;" Guid="0a673bb1-d928-4e08-b471-14e6dc6980fc" InformativeScreenshot="106d1111877a141b14974aa4240372ea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CvTextArea="1285, 592, 124, 20" CvTextArgument="Disponibilidad:" CvType="Text" DesignTimeRectangle="1286, 586, 123, 30" ElementType="Text" FriendlyName="'Disponibilidad'" FullSelectorArgument="&lt;webctrl aaname='                               Disponibilidad:                  *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               Disponibilidad:                  *' tag='LABEL' type='' class='' check:innerText='Disponibilidad:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NGetText.Target>
+                                                    </uix:NGetText>
+                                                    <uix:NGetText DisplayName="Get Text 'Tipo de Producto'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_16" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" TextString="[CurrentRow.ByField(&quot;Precio_Producto&quot;).StringValue]" Version="V3">
+                                                      <uix:NGetText.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg" CvTextArea="1286, 676, 105, 27" CvType="AnyWordGroup" DesignTimeRectangle="1286, 677, 850, 28" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Bs8,50'" FullSelectorArgument="&lt;webctrl class='prices' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='prices' tag='DIV' type='' aaname='                                                                                                               ' /&gt;" Guid="36897c57-ca79-4e5a-9d6a-68117727de81" InformativeScreenshot="68cc201236733d6b3cddbb416f95ac4f.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CvTextArea="1284, 622, 150, 20" CvTextArgument="Tipo de Producto:" CvType="Text" DesignTimeRectangle="1286, 616, 148, 30" ElementType="Text" FriendlyName="'Tipo de Producto'" FullSelectorArgument="&lt;webctrl aaname='                               Tipo de Producto:                *' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                               Tipo de Producto:                *' tag='LABEL' type='' class='' check:innerText='Tipo de Producto:' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NGetText.Target>
+                                                    </uix:NGetText>
+                                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_14" Text="[string.Format(&quot;Copiado exito&quot;)]" />
+                                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inicio'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Version="V3">
+                                                      <uix:NClick.Target>
+                                                        <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg?_pos=1&amp;_sid=7f18e7550&amp;_ss=r" CvTextArea="467, 205, 196, 34" CvTextArgument="FIDALGA" CvType="Text" DesignTimeRectangle="423, 203, 238, 38" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='Fidalga' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;img' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Fidalga' type='' tag='IMG' class='lazyautosizes lazyloaded' /&gt;" Guid="7fb91a91-21d8-4651-be40-7d10175d62eb" InformativeScreenshot="ce52f6ef94d447caf02a4f1d5a3eb031.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                                          <uix:TargetAnchorable.Anchors>
+                                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                              <uix:Target CvTextArea="422, 302, 53, 19" CvTextArgument="Inicio" CvType="Text" DesignTimeRectangle="423, 299, 50, 26" ElementType="Text" FriendlyName="'Inicio'" FullSelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' type='' class='' aaname='Inicio' check:innerText='Inicio' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                                            </scg:List>
+                                                          </uix:TargetAnchorable.Anchors>
+                                                        </uix:TargetAnchorable>
+                                                      </uix:NClick.Target>
+                                                    </uix:NClick>
+                                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Delay_21" />
+                                                  </Sequence>
+                                                </If.Then>
+                                                <If.Else>
+                                                  <Sequence sap2010:WorkflowViewState.IdRef="Sequence_10" />
+                                                </If.Else>
+                                              </If>
+                                            </Sequence>
+                                          </If.Else>
+                                        </If>
+                                      </Sequence>
+                                    </If.Else>
+                                  </If>
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="376,372" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Inicio'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="205921d2-3ec1-45fc-a177-afe531c6971e" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.fidalga.com/products/arroz-dolly-diamante-1kg?_pos=1&amp;_sid=7f18e7550&amp;_ss=r" CvTextArea="467, 205, 196, 34" CvTextArgument="FIDALGA" CvType="Text" DesignTimeRectangle="423, 203, 238, 38" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl aaname='Fidalga' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;img' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Fidalga' type='' tag='IMG' class='lazyautosizes lazyloaded' /&gt;" Guid="7fb91a91-21d8-4651-be40-7d10175d62eb" InformativeScreenshot="ce52f6ef94d447caf02a4f1d5a3eb031.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Arroz Dolly Diamante 1kg| Fidalga.com' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target CvTextArea="422, 302, 53, 19" CvTextArgument="Inicio" CvType="Text" DesignTimeRectangle="423, 299, 50, 26" ElementType="Text" FriendlyName="'Inicio'" FullSelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='sticky-wrapper' tag='SPAN' type='' class='' aaname='Inicio' check:innerText='Inicio' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,86" sap2010:WorkflowViewState.IdRef="MessageBox_12" Text="[string.Format(&quot;no es arroz&quot;)]" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelForEachRowX.Body>
+                    </ueab:ExcelForEachRowX>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 2576, 1408" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="646e91d5ae31b398b0552c47e373235c.jpg" Selector="&lt;html app='chrome.exe' title='Colecciones – Fidalga' /&gt;" Title="Colecciones – Fidalga" Url="https://www.fidalga.com/collections" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
